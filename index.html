@@ -628,7 +628,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
 
     <!-- Project Idea muti-row-->
-  <!-- Start Row 3 -->
+  <!-- Start Row 6 -->
   <div class="w3-row-padding w3-margin-top">
   
     <!-- whole Column -->
@@ -641,10 +641,10 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           Project Idea
         </h2>
     </div>
-</div>
+  </div>
 
 
-  <!-- ROW 6 -->
+  <!-- ROW 7 -->
   <!-- project Idea-->
 
   <div class="w3-row-padding w3-margin-top">
@@ -736,19 +736,50 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
               Description 
             </b>
           </h5>
-
           <p>
             Aim: to optimise the routes pool maintenance technicians use to travel between their daily jobs list.
-            Resources:
-            
           </p>
-          <p>A database of information:</p>
-          <ul>
-            <li> The total list of maintenance jobs </li>
-            <li> Job characteristics (Job type (classified into the chemicals required) , Estimated time (onsite), Due date, The time range for completion)</li>
-            <li> Client (Address)</li>
-            <li> Pool (Size, Construction type, Filter equipment type)</li>
-          </ul>
+          <p>
+            Please read the user story written in the outcome section below. 
+            The user story has helped me discover how the application will function, but it is just one story. 
+            I see two users for the start-up phase of the project, being: the pool technician (Mr Pools) 
+            and the shop administrator (Ms Spa). Ms Spa’s job is to organise Mr Pools. She will need access to 
+            the system to add jobs, adjust priorities and communicate with clients. Ms Spa would also use the 
+            system to complete billing. She does not need the mapping/route facility. The third user – an enhancement – would 
+            be the client. They might log in to undertake tasks such as: see their jobs, pay bills, approve new work.
+          </p>
+          <p>
+            The project is a web application with three significant parts. 
+            It requires a backend database and a front-end content management system. 
+            It will also need a sophisticated algorithm to produce the technician’s daily route.
+          </p>
+          <p>
+            The front-end would have to be GPS enabled so that it can 
+            interact with the routing/mapping functionality. Essentially it is a jobs list and a route display. 
+            The front end would also report back time in progress, so it acts as an activity logger. It would 
+            have basic stock inventory functionality. And some billing functionality.
+          </p>
+          <p>
+            The back-end database stores data and requires user group authorisation. 
+            The data needed includes three tables: job characteristics (time to complete, materials, due 
+            date, due date flexibility, job priority), property (the pool's location), client info.
+          </p>
+          <p>
+            The route optimisation algorithm will work with the data stored in the database. 
+            It will produce an ordered jobs list that is passed to a mapping API.  Although I would 
+            expect it to work on the fly, I would also expect it to plan each week. Looking at the 
+            job due in the week, it would lump them geographically to reduce travel between jobs. 
+            The algorithm should make minor adjustments through the week in response to work added 
+            to the schedule in an ad-hoc way.
+          </p>
+          <p>
+            Ms Spa would require the capacity to do long-range route optimisation. 
+            She could look far into the future, say 12 months, ahead. Then she might tweak 
+            the projected jobs list to get more optimisation out of the system; a scenario analyses functionality.
+          </p>
+
+
+
 
           <h5 class="w3-opacity w3-text-teal">
             <b>
@@ -790,39 +821,48 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
           </p>
 
-          <h5 class="w3-opacity w3-text-teal">
-            <b>
-              Outcome   
-            </b>
-          </h5>
-          <p>
-            User story for pool technician (Mr Pools).
-          </p>
-
-          <p>
-            
-            At the start of the day, Mr Pools logs into his device and sees a list of jobs for the day. 
-            He can review a map of his itinerary for the day, showing the path he will take for the day. 
-            The app also provides a list of materials he will need throughout his day (based on the job type). 
-            Mr Pools loads his van and heads off following the onboard directions. When he arrives the first job the 
-            app records the start time and stops when he departs. At the end of the job, Mr Pools tick off it off as 
-            complete and records the actual chemicals he used (for billing). He amends the schedule for the time the 
-            job is due. While completing the maintenance, Mr Pools found that the filter cartage needs replacement, so 
-            he logs that job so it can be presented to the client and scheduled if it is approved. 
-            
-          </p>
-
-
-
-
-
         </div>  
     </div>
 
   <!-- end of row -->
   </div>
 
+  <!-- Start Row 8 -->
+  <div class="w3-row-padding w3-margin-top">
+  
+    <!-- whole Column -->
 
+    <div class="w3-content ">
+    
+     <!-- Project Idea -->
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h5 class="w3-opacity w3-text-teal">
+          <b>
+            Outcome   
+          </b>
+        </h5>
+        <p>
+          User story for pool technician (Mr Pools).
+        </p>
+
+        <p>
+          
+          At the start of the day, Mr Pools logs into his device and sees a list of jobs for the day. 
+          He can review a map of his itinerary for the day, showing the path he will take for the day. 
+          The app also provides a list of materials he will need throughout his day (based on the job type). 
+          Mr Pools loads his van and heads off following the onboard directions. When he arrives the first job the 
+          app records the start time and stops when he departs. At the end of the job, Mr Pools tick off it off as 
+          complete and records the actual chemicals he used (for billing). He amends the schedule for the next time the  
+          job is due. While completing the maintenance, Mr Pools noticed that the filter cartage needs replacing. He records this as
+          a future job so it can be presented to the client and scheduled if it is approved. 
+        </p>
+        <p>
+          Mr Pools jumps back in the van, 
+          selects the next job and a map displays. He has a drink of water, turns up the radio and drives off on his way.
+          
+        </p>
+    </div>
+  </div>
 
 
 
